@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>This is the first example in Javascript</title>
+    <script>
+        function myFunc(event) {
+            // document.getElementsByTagName("h1")[1].innerHTML = "You have clicked on the first header";
+
+            // alert("This will pop up an alert box");
+            // console.log("This will print in the console");
+
+           var headers = document.getElementsByTagName("h1");
+        //    console.log(headers);
+            
+           var hid = document.getElementById("hid");
+           if(event === "mouseover") {
+            hid.style.backgroundColor = "#629cda";
+            hid.style.border = "2px dashed black";
+           }
+           else if(event === "mouseout") {
+            hid.style.backgroundColor = "#2ae22f";
+            hid.style.border = "2px solid red";
+           }
+           else if (event === "click") {
+               var a = 5.0;
+               var b = "5";
+
+               console.log(a !== b);
+
+               var x = "0";
+               if (x == "sdfsdfsdfsd") {
+                   console.log("CHECKING CONDITION");
+               }
+
+            //    var choice = confirm("Do you want to continue?");
+            //    if (choice) {
+            //        console.log("You clicked confirm");
+            //    }
+            //    else {
+            //        console.log("You clicked cancel");
+            //    }
+            var msg = prompt("Please leave your message:");
+            console.log(msg);
+           }
+        }
+    </script>
+</head>
+<body>
+    <h1 onmouseover="myFunc('mouseover');" onmouseout="myFunc('mouseout');" onclick="myFunc('click')">Click this header to view Alert Box</h1>
+    <h1>This is the header that will change if you click the first header.</h1>
+    <h1 id="hid">This is a header with an id</h1>
+</body>

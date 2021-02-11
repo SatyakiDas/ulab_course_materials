@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Please enter the country you’d like to find information for: <input id="country-name" type="text" size="30"></p>
+<button id="search-btn">Search!</button>
+<br>
+<div id="result">
+    <!-- <b>Capital: </b>info["capital"] <br>
+    <b>Language: </b>info["lang"] <br>
+    <b>Currency: </b>info["currency"] <br> -->
+</div>
+<script type="text/javascript">
+$(function () {
+    $("#search-btn").bind("click", function() {
+        var inputCountry = $("#country-name").val();
+        $.getJSON(
+            '/country_info',
+            {
+                countryName: inputCountry
+            },
+            function (data) {
+                console.log(data);
+
+                $("#result").append(
+                    `<b>Capital: </b>${data["capital"]} <br>
+                    <b>Language: </b>${data["lang"]} <br>
+                    <b>Currency: </b>${data["currency"]} <br>`
+                    // "<b>Capital: </b>"+data["capital"]+"<br><b>Language: </b>"+data["lang"]+"<br><b>Currency: </b>"+
+                    // data["currency"]+"<br>"
+                );
+            });
+    });
+});
+</script>
+{% endblock %} 

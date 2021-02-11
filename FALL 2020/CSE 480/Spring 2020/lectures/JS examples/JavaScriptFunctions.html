@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction1() {
+  document.getElementById("demo1").innerHTML = "Hello World!";
+}
+
+function myFunction2(name,job) {
+  document.getElementById("demo2").innerHTML = "Welcome " + name + ", the " + job + ".";
+}
+
+function myfunction3(txt) { 
+  document.getElementById("demo3").innerHTML = txt
+
+} 
+function myfunction4(){
+	var name = document.getElementById("inputName").value;
+  var ID = document.getElementById("inputId").value;
+  var Marks = document.getElementById("inputMarks").value;
+	var show = name+" "+ID+"<br> " + Marks;
+  var total = Marks + Marks;
+	document.getElementById("demo4").innerHTML = show;
+}
+</script>
+</head>
+<body>
+<p>When you click "Try it", a function will be called.</p>
+<p>The function will display a message.</p>
+<button onclick="myFunction1()">Try it</button>
+<p id="demo1"></p>
+<p>Click "Try it" to call a function with arguments</p>
+<button onclick="myFunction2('Harry Potter','Wizard')">Try it</button>
+<p id="demo2"></p>
+<p>When you click on one of the buttons, a function will be called. The function will display the argument that is passed to it.</p>
+<form> 
+  <input type="text" id = "inputName" value="Test">
+  <input type="text" id = "inputId" value="Test">
+  <input type="text" id = "inputMarks" value="Test">
+  <input type="button" onclick="myfunction4()" value="Submit">
+ <input type="button" onclick="myfunction4()" value="Clear">
+  <input type="button" onclick="myfunction3('Good Morning!')" value="In the Morning"> 
+  <input type="button" onclick="myfunction3('Good Evening!')" value="In the Evening"> 
+</form> 
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+</body>
+</html>

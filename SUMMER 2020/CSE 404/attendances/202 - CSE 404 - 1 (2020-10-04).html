@@ -1,0 +1,783 @@
+
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript">
+		let className="202 - CSE 404 - 1"
+		let classDate="2020-10-04"
+		let dateList=["2020-07-07","2020-07-12","2020-07-14","2020-07-19","2020-07-21","2020-07-26","2020-07-28","2020-08-04","2020-08-09","2020-08-16","2020-08-23","2020-08-25","2020-09-01","2020-09-06","2020-09-08","2020-09-13","2020-09-14","2020-09-15","2020-09-20","2020-09-22","2020-09-27","2020-10-04"]
+		let startTime="11:06"
+		let endTime="13:04"
+		let _activeMeetID="dbv-bweh-vte"
+		let classList="farah tabira;sanjid hossain patwary;fariha afrin;swarnali dey;tahmina akhter;shaharia alam;chironjeb kumar das avro;md. sakib ahamed sohag;farhana hoque tania;md. safayat hossain;sania rahaman mimu;mohammad mohiuddin;amirul islam;parvina ahmed;md. abul kalam rainbow;bishal dey;basma rahman;rawnak siddique;fayezur rahman;mujtaba abdul qadir;maysha chowdhury ononna;shahnila mahbub;sadia hasan;a.s.m arafat kamal;sanjida anjum sohana;fahimul islam shakil;md. mahmudur rahman;md. abdul kamrun faisal;salma sayeeda orpa;md. muhtasim fuad fahim;ayon mazumder -171014075;monjurul hasan;md. muntakim islam badrul;satyaki das;moriyom akter"
+		let _arrivalTimes="{\"c0427267-47f9-4dc0-8ef3-51572991b8f1\":{\"name\":\"Satyaki Das\",\"arrived\":\"11:06\",\"last_seen\":\"13:04\",\"stayed\":119,\"checks\":[\"11:06\",\"11:07\",\"11:08\",\"11:09\",\"11:10\",\"11:11\",\"11:12\",\"11:13\",\"11:14\",\"11:15\",\"11:16\",\"11:17\",\"11:18\",\"11:19\",\"11:20\",\"11:21\",\"11:22\",\"11:23\",\"11:24\",\"11:25\",\"11:26\",\"11:27\",\"11:28\",\"11:29\",\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"bb7588a4-dbef-49b3-a5d5-2e516ba9ec8f\":{\"name\":\"Chironjeb Kumar das avro\",\"arrived\":\"11:16\",\"last_seen\":\"13:04\",\"stayed\":108,\"checks\":[\"11:16\",\"11:17\",\"11:18\",\"11:19\",\"11:20\",\"11:21\",\"11:22\",\"11:23\",\"11:24\",\"11:25\",\"11:26\",\"11:27\",\"11:28\",\"11:29\",\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"4f016c4e-460c-4fb2-9db3-dacf777f9e26\":{\"name\":\"Ayon Mazumder -171014075\",\"arrived\":\"11:17\",\"last_seen\":\"11:35\",\"stayed\":18,\"checks\":[\"11:17\",\"11:18\",\"11:19\",\"11:20\",\"11:21\",\"11:22\",\"11:23\",\"11:24\",\"11:25\",\"11:26\",\"11:27\",\"11:28\",\"11:29\",\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:35\"]},\"6496a138-d32a-45ed-aea0-7b166ee1ea64\":{\"name\":\"Shaharia Alam\",\"arrived\":\"11:18\",\"last_seen\":\"11:29\",\"stayed\":12,\"checks\":[\"11:18\",\"11:19\",\"11:20\",\"11:21\",\"11:22\",\"11:23\",\"11:24\",\"11:25\",\"11:26\",\"11:27\",\"11:28\",\"11:29\"]},\"38007516-5e2b-4726-abab-1a34202866da\":{\"name\":\"Md. Abul Kalam rainbow\",\"arrived\":\"11:18\",\"last_seen\":\"12:12\",\"stayed\":39,\"checks\":[\"11:18\",\"11:19\",\"11:20\",\"11:21\",\"11:22\",\"11:23\",\"11:24\",\"11:25\",\"11:26\",\"11:27\",\"11:28\",\"11:29\",\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\"]},\"3c1fe03c-7888-470f-bf44-29002b57b4bc\":{\"name\":\"Monjurul Hasan\",\"arrived\":\"11:19\",\"last_seen\":\"11:40\",\"stayed\":19,\"checks\":[\"11:19\",\"11:20\",\"11:21\",\"11:22\",\"11:23\",\"11:24\",\"11:25\",\"11:26\",\"11:27\",\"11:28\",\"11:29\",\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:40\"]},\"2c0b10a2-3797-49cb-bd78-d29af275dfe0\":{\"name\":\"Basma Rahman\",\"arrived\":\"11:19\",\"last_seen\":\"13:04\",\"stayed\":105,\"checks\":[\"11:19\",\"11:20\",\"11:21\",\"11:22\",\"11:23\",\"11:24\",\"11:25\",\"11:26\",\"11:27\",\"11:28\",\"11:29\",\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"7d3ed15e-9b96-4596-9918-5fd4a1210e5a\":{\"name\":\"Md. Muhtasim Fuad Fahim\",\"arrived\":\"11:20\",\"last_seen\":\"11:21\",\"stayed\":1,\"checks\":[\"11:20\",\"11:21\"]},\"8ce1051a-0ada-404f-858b-2e5f6a895f66\":{\"name\":\"Satyaki Das\",\"arrived\":\"11:21\",\"last_seen\":\"11:21\",\"stayed\":0,\"checks\":[\"11:21\"]},\"20d8c4ab-133d-40b0-9806-2ab3d6bbe72a\":{\"name\":\"Md. Muhtasim Fuad Fahim\",\"arrived\":\"11:22\",\"last_seen\":\"11:25\",\"stayed\":3,\"checks\":[\"11:22\",\"11:23\",\"11:24\",\"11:25\"]},\"5e14b97f-fea0-4d05-b150-5700c38e130f\":{\"name\":\"Swarnali Dey\",\"arrived\":\"11:22\",\"last_seen\":\"11:31\",\"stayed\":9,\"checks\":[\"11:22\",\"11:23\",\"11:24\",\"11:25\",\"11:26\",\"11:27\",\"11:28\",\"11:29\",\"11:30\",\"11:31\"]},\"fdd6966b-4ad7-4ea1-a0c4-5ec4b80ab1f0\":{\"name\":\"Salma Sayeeda Orpa\",\"arrived\":\"11:22\",\"last_seen\":\"11:26\",\"stayed\":4,\"checks\":[\"11:22\",\"11:23\",\"11:24\",\"11:25\",\"11:26\"]},\"bb24263e-6ea4-401d-9e75-267e113dbfd6\":{\"name\":\"Satyaki Das\",\"arrived\":\"11:22\",\"last_seen\":\"11:27\",\"stayed\":5,\"checks\":[\"11:22\",\"11:23\",\"11:24\",\"11:25\",\"11:26\",\"11:27\"]},\"dd21f3cd-5309-48e2-8e08-9c6e399377d3\":{\"name\":\"Md. Sakib Ahamed Sohag\",\"arrived\":\"11:23\",\"last_seen\":\"11:24\",\"stayed\":1,\"checks\":[\"11:23\",\"11:24\"]},\"571e7eb2-3b5a-408a-8263-c5d67adced08\":{\"name\":\"Fahimul Islam Shakil\",\"arrived\":\"11:24\",\"last_seen\":\"13:04\",\"stayed\":46,\"checks\":[\"11:24\",\"11:25\",\"11:26\",\"11:27\",\"11:28\",\"11:29\",\"11:30\",\"11:31\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"b0cb3214-72b8-4c64-bd3e-8678f503fedf\":{\"name\":\"A.S.M Arafat Kamal\",\"arrived\":\"11:24\",\"last_seen\":\"11:27\",\"stayed\":3,\"checks\":[\"11:24\",\"11:25\",\"11:26\",\"11:27\"]},\"206c21b2-81cf-4ff2-9def-e6e740ff04e9\":{\"name\":\"Mujtaba Abdul Qadir\",\"arrived\":\"11:24\",\"last_seen\":\"12:53\",\"stayed\":66,\"checks\":[\"11:24\",\"11:25\",\"11:26\",\"11:27\",\"11:28\",\"11:29\",\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:30\",\"12:50\",\"12:51\",\"12:52\",\"12:53\"]},\"63cb56d7-837d-47ee-a921-c7f803dae2a4\":{\"name\":\"Farah Tabira\",\"arrived\":\"11:24\",\"last_seen\":\"11:30\",\"stayed\":6,\"checks\":[\"11:24\",\"11:25\",\"11:26\",\"11:27\",\"11:28\",\"11:29\",\"11:30\"]},\"fe6edd7d-92e6-45f9-9254-8444aeff4b3d\":{\"name\":\"Mohammad Mohiuddin\",\"arrived\":\"11:26\",\"last_seen\":\"12:55\",\"stayed\":85,\"checks\":[\"11:26\",\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\"]},\"f8424661-9be1-4717-8b4e-a237b4047ae2\":{\"name\":\"Md. Sakib Ahamed Sohag\",\"arrived\":\"11:26\",\"last_seen\":\"11:27\",\"stayed\":1,\"checks\":[\"11:26\",\"11:27\"]},\"c56ba844-05db-48ac-b1c7-455385c0d9b6\":{\"name\":\"Md. Muhtasim Fuad Fahim\",\"arrived\":\"11:26\",\"last_seen\":\"13:04\",\"stayed\":97,\"checks\":[\"11:26\",\"11:27\",\"11:29\",\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"d1693792-ea1e-4efc-8e88-1123bf89fe25\":{\"name\":\"Amirul Islam\",\"arrived\":\"11:27\",\"last_seen\":\"13:04\",\"stayed\":98,\"checks\":[\"11:27\",\"11:28\",\"11:29\",\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"019c1d64-bab2-4341-ab11-0e5337637b0d\":{\"name\":\"Sanjid Hossain Patwary\",\"arrived\":\"11:27\",\"last_seen\":\"12:26\",\"stayed\":59,\"checks\":[\"11:27\",\"11:28\",\"11:29\",\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\"]},\"0c80fe85-3a5f-4def-9f73-9ca3ea860c18\":{\"name\":\"Bishal Dey\",\"arrived\":\"11:27\",\"last_seen\":\"11:28\",\"stayed\":1,\"checks\":[\"11:27\",\"11:28\"]},\"3415c9bf-24e4-4628-98f5-81911dc089bb\":{\"name\":\"Md. Sakib Ahamed Sohag\",\"arrived\":\"11:28\",\"last_seen\":\"11:39\",\"stayed\":12,\"checks\":[\"11:28\",\"11:29\",\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\"]},\"e58c29d2-4478-42c6-ab4c-e7bf002bad0f\":{\"name\":\"Sanjida Anjum Sohana\",\"arrived\":\"11:28\",\"last_seen\":\"13:04\",\"stayed\":97,\"checks\":[\"11:28\",\"11:29\",\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"299f2183-40e5-4711-8687-420820651bd3\":{\"name\":\"Rawnak Siddique\",\"arrived\":\"11:30\",\"last_seen\":\"13:04\",\"stayed\":95,\"checks\":[\"11:30\",\"11:31\",\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"81ffdffc-a87f-4886-9d92-fc1f5bab45b4\":{\"name\":\"Shahnila Mahbub\",\"arrived\":\"11:30\",\"last_seen\":\"11:31\",\"stayed\":1,\"checks\":[\"11:30\",\"11:31\"]},\"66844a4c-c265-4c13-b347-46f374d2f489\":{\"name\":\"Md. Abdul kamrun Faisal\",\"arrived\":\"11:31\",\"last_seen\":\"11:31\",\"stayed\":0,\"checks\":[\"11:31\"]},\"339a2f79-635e-41b2-af36-7decaca35642\":{\"name\":\"Md. Safayat Hossain\",\"arrived\":\"11:32\",\"last_seen\":\"11:34\",\"stayed\":3,\"checks\":[\"11:32\",\"11:33\",\"11:34\"]},\"66b98405-3e1e-49a2-bc50-5817b49c989f\":{\"name\":\"Farhana Hoque Tania\",\"arrived\":\"11:32\",\"last_seen\":\"12:01\",\"stayed\":30,\"checks\":[\"11:32\",\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\"]},\"7fdb930b-f9de-451c-9bf4-2db69ecf4c3c\":{\"name\":\"Sadia Hasan\",\"arrived\":\"11:32\",\"last_seen\":\"11:32\",\"stayed\":0,\"checks\":[\"11:32\"]},\"35e5649e-3063-4cd3-a8db-54584c5a10fe\":{\"name\":\"Maysha Chowdhury Ononna\",\"arrived\":\"11:33\",\"last_seen\":\"11:40\",\"stayed\":7,\"checks\":[\"11:33\",\"11:34\",\"11:35\",\"11:36\",\"11:37\",\"11:38\",\"11:39\",\"11:40\"]},\"904ddac6-6e5d-4b59-b8f2-892b39e81470\":{\"name\":\"Md. Abdul kamrun Faisal\",\"arrived\":\"11:34\",\"last_seen\":\"11:34\",\"stayed\":1,\"checks\":[\"11:34\"]},\"f7486f0e-cc62-4d16-b40f-c739ef6d02d7\":{\"name\":\"Fayezur Rahman\",\"arrived\":\"11:35\",\"last_seen\":\"13:04\",\"stayed\":87,\"checks\":[\"11:35\",\"11:36\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"d5787332-fd17-4697-9b95-3970c73ccc88\":{\"name\":\"Parvina Ahmed\",\"arrived\":\"11:36\",\"last_seen\":\"11:37\",\"stayed\":1,\"checks\":[\"11:36\",\"11:37\"]},\"10aeaa97-cd8e-4e36-8c80-fe777494b6fc\":{\"name\":\"Fariha Afrin\",\"arrived\":\"11:37\",\"last_seen\":\"12:59\",\"stayed\":67,\"checks\":[\"11:37\",\"11:38\",\"11:39\",\"11:40\",\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:33\",\"12:34\",\"12:35\",\"12:38\",\"12:39\",\"12:40\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:56\",\"12:59\"]},\"ecff045e-1eed-4536-bfc5-7f1d3bb6a093\":{\"name\":\"Md. Mahmudur Rahman\",\"arrived\":\"11:39\",\"last_seen\":\"11:39\",\"stayed\":0,\"checks\":[\"11:39\"]},\"33009b3e-e055-458e-a86c-333628d7c4c5\":{\"name\":\"Md. Abdul kamrun Faisal\",\"arrived\":\"11:41\",\"last_seen\":\"11:54\",\"stayed\":13,\"checks\":[\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\"]},\"8bcf5198-f3b0-4d78-b91f-c1b08f2d6759\":{\"name\":\"Md. Abul Kalam rainbow\",\"arrived\":\"11:41\",\"last_seen\":\"12:21\",\"stayed\":41,\"checks\":[\"11:41\",\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\"]},\"1d8e7733-a426-4d2e-89aa-8451de4484be\":{\"name\":\"Maysha Chowdhury Ononna\",\"arrived\":\"11:42\",\"last_seen\":\"13:04\",\"stayed\":83,\"checks\":[\"11:42\",\"11:43\",\"11:44\",\"11:45\",\"11:46\",\"11:47\",\"11:48\",\"11:49\",\"11:50\",\"11:51\",\"11:52\",\"11:53\",\"11:54\",\"11:55\",\"11:56\",\"11:57\",\"11:58\",\"11:59\",\"12:00\",\"12:01\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"46e20ba2-ac46-4fbd-9790-ff7d2e15bf4b\":{\"name\":\"Md. Safayat Hossain\",\"arrived\":\"11:46\",\"last_seen\":\"11:46\",\"stayed\":0,\"checks\":[\"11:46\"]},\"cf834125-8c03-4b1f-929c-15ecee92eacd\":{\"name\":\"Satyaki Das\",\"arrived\":\"11:46\",\"last_seen\":\"11:46\",\"stayed\":1,\"checks\":[\"11:46\"]},\"87be62a4-70ba-421c-add8-92a77a2874a7\":{\"name\":\"Parvina Ahmed\",\"arrived\":\"11:59\",\"last_seen\":\"13:04\",\"stayed\":63,\"checks\":[\"11:59\",\"12:02\",\"12:03\",\"12:04\",\"12:05\",\"12:06\",\"12:07\",\"12:08\",\"12:09\",\"12:10\",\"12:11\",\"12:12\",\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"41841e76-23ba-40c6-957b-ca6a198d3a82\":{\"name\":\"Md. Abdul kamrun Faisal\",\"arrived\":\"12:06\",\"last_seen\":\"12:07\",\"stayed\":2,\"checks\":[\"12:06\",\"12:07\"]},\"7723c46d-9e0e-49b2-a2ca-e44ce8247b7b\":{\"name\":\"Sadia Hasan\",\"arrived\":\"12:08\",\"last_seen\":\"12:08\",\"stayed\":0,\"checks\":[\"12:08\"]},\"2f222123-2cab-45cd-b76d-cd2ad95b896f\":{\"name\":\"Md. Sakib Ahamed Sohag\",\"arrived\":\"12:13\",\"last_seen\":\"13:04\",\"stayed\":40,\"checks\":[\"12:13\",\"12:14\",\"12:15\",\"12:16\",\"12:17\",\"12:18\",\"12:19\",\"12:20\",\"12:21\",\"12:22\",\"12:27\",\"12:28\",\"12:29\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"274d4a74-6ac1-426e-8ce2-fbca4aa0b545\":{\"name\":\"Farhana Hoque Tania\",\"arrived\":\"12:21\",\"last_seen\":\"13:04\",\"stayed\":42,\"checks\":[\"12:21\",\"12:22\",\"12:23\",\"12:24\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"faa8ac7e-5332-495f-81d5-a6b8ce46f413\":{\"name\":\"Sania Rahaman Mimu\",\"arrived\":\"12:23\",\"last_seen\":\"12:48\",\"stayed\":26,\"checks\":[\"12:23\",\"12:24\",\"12:25\",\"12:26\",\"12:27\",\"12:28\",\"12:29\",\"12:30\",\"12:31\",\"12:32\",\"12:33\",\"12:34\",\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\"]},\"175249fd-8a34-4a36-97e4-32644ee96571\":{\"name\":\"Sadia Hasan\",\"arrived\":\"12:24\",\"last_seen\":\"12:26\",\"stayed\":2,\"checks\":[\"12:24\",\"12:25\",\"12:26\"]},\"4a001c48-11eb-4733-8612-0b0b2ab0cafe\":{\"name\":\"Salma Sayeeda Orpa\",\"arrived\":\"12:30\",\"last_seen\":\"12:30\",\"stayed\":0,\"checks\":[\"12:30\"]},\"2eacb6c6-3036-4a7a-9f20-8d0337207000\":{\"name\":\"Md. Abdul kamrun Faisal\",\"arrived\":\"12:31\",\"last_seen\":\"12:32\",\"stayed\":1,\"checks\":[\"12:31\",\"12:32\"]},\"0096b196-aaf4-4184-9b04-5a824e13a4e1\":{\"name\":\"Sadia Hasan\",\"arrived\":\"12:35\",\"last_seen\":\"13:04\",\"stayed\":29,\"checks\":[\"12:35\",\"12:36\",\"12:37\",\"12:38\",\"12:39\",\"12:40\",\"12:41\",\"12:42\",\"12:43\",\"12:44\",\"12:45\",\"12:46\",\"12:47\",\"12:48\",\"12:49\",\"12:50\",\"12:51\",\"12:52\",\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"e0837c03-b941-4529-b291-c1186344a95a\":{\"name\":\"Sanjid Hossain Patwary\",\"arrived\":\"12:37\",\"last_seen\":\"12:37\",\"stayed\":0,\"checks\":[\"12:37\"]},\"3dc6b966-5e02-4247-b79c-9ff2e429aab2\":{\"name\":\"Swarnali Dey\",\"arrived\":\"12:53\",\"last_seen\":\"12:58\",\"stayed\":5,\"checks\":[\"12:53\",\"12:54\",\"12:55\",\"12:56\",\"12:57\",\"12:58\"]},\"91a4f13a-77a0-48af-8811-bb98a271a6b5\":{\"name\":\"Mohammad Mohiuddin\",\"arrived\":\"12:56\",\"last_seen\":\"13:04\",\"stayed\":8,\"checks\":[\"12:56\",\"12:57\",\"12:58\",\"12:59\",\"13:00\",\"13:01\",\"13:02\",\"13:03\",\"13:04\"]},\"59313ec0-e1e0-482a-953a-04db959600ba\":{\"name\":\"Swarnali Dey\",\"arrived\":\"13:00\",\"last_seen\":\"13:02\",\"stayed\":3,\"checks\":[\"13:00\",\"13:01\",\"13:02\"]},\"15886024-ea3a-4fd8-b30d-9baff58093f2\":{\"name\":\"Salma Sayeeda Orpa\",\"arrived\":\"13:03\",\"last_seen\":\"13:04\",\"stayed\":2,\"checks\":[\"13:03\",\"13:04\"]}}"
+	</script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+	<script type='text/javascript'>
+		// Attendance summary v1.04
+		// pad with a leading zero (for dates & time)
+		function pad(v,n){
+			if (!n) n=2
+			if(isNaN(v) && v.indexOf(':')>-1) n=5
+			return ('00000'+v).slice(-n)
+		}
+
+		function showToolTip(e){
+			let tgt=$(e.target)
+			let tgt_p=tgt.parent('.student-row')
+			$('#gmatt-tooltip').detach().appendTo(tgt).fadeIn('fast')
+			$('#gmatt-arr').text(tgt_p.data('arrived'))
+			$('#gmatt-lft').text(tgt_p.data('left'))
+			$('#gmatt-sty').text(tgt_p.data('stayed'))
+			$('#gmatt-ne').text(tgt_p.data('num-entries'))
+		}
+
+		function hideToolTip(e){
+			$('#gmatt-tooltip').hide().detach().appendTo($('body'))
+		}
+		function showSummaryTip(e){
+			let tgt=$(e.target)
+			let wd1=$(event.currentTarget).width()
+			let wd2=$('#summary-tooltip').width()
+			let lf=$(event.currentTarget).position().left
+			$('#summary-tooltip').detach().css('left', 1*lf+(1*wd1-1*wd2)/2-7+'px').appendTo(tgt).fadeIn('fast')
+			$('#sum-sta').text(tgt.data('start'))
+			$('#sum-end').text(tgt.data('end'))
+			$('#sum-dur').text(tgt.data('duration'))
+			
+		}
+		function hideSummaryTip(e){
+			$('#summary-tooltip').hide().detach().appendTo($('body'))
+		}
+		function showStudentTip(e){
+			let tgt=$(e.target)
+			let tgt_p=tgt.parent('.as')
+
+			//let wd1=$(event.currentTarget).width()
+			let wd1=tgt.width()
+			let wd2=$('#student-tooltip').width()
+			//let lf=$(event.currentTarget).position().left
+			let lf=tgt_p.position().left
+			let nl=(wd1*1-1*wd2)/2+'px'
+			$('#student-tooltip').detach().css('left', nl).appendTo(tgt).fadeIn('fast')
+			$('#stu-arr').text(tgt.data('arrived'))
+			$('#stu-lft').text(tgt.data('left'))
+			$('#stu-sty').text(tgt.data('stayed'))
+			
+		}
+		function hideStudentTip(e){
+			$('#student-tooltip').hide().detach().appendTo($('body'))
+		}
+		function addWonkyData(txt){
+			if( $('#wonky-data').length==0 ){
+				let dwd=$('<ul/>').attr('id', 'wonky-data')
+				$('#main-table').after(dwd)
+			}
+			if( $('#wonky-data:empty') ){
+				$('<p/>').addClass('wonky-header').html("<span class='wonky'></span> There appears to be some odd data in this file:").appendTo('#wonky-data')
+			}
+			$('<li/>').html(txt).appendTo('#wonky-data')
+		}
+		$('document').ready(function(){
+			$('.className').text(className)
+			$('#classDate').empty()
+			if(typeof(dateList)=='undefined'){
+				dateList=[classDate]
+			}
+			$.each(dateList, function(v, t){
+				let o=$('<option/>').attr('value', t).text(t)
+				o.appendTo($('#classDate'))
+			})
+			$('.classDate').text(classDate)
+			$('#classDate').val(classDate)
+			$('#meet-startTime').text(startTime)
+			$('#meet-endTime').text(endTime)
+			if(typeof(_activeMeetID)=='undefined'){
+				_activeMeetID=''
+			}
+			$('#meet-meet-id').text(_activeMeetID)
+			$('#logging-info')[$('#gma-log').val()==''?'removeClass':'addClass']( 'showing' )
+
+			let d=$('<div/>')
+			d.attr('id','student-row-header').attr('data-student-name', 'Names')
+			$('<span/>').addClass('student-name').attr('data-html', true).appendTo(d)
+			$('<span/>').addClass('student-fullname').attr('data-html', true).appendTo(d)												
+			$('<span/>').addClass('arrived-at sub-column').attr('title','Arrrived at').appendTo(d)
+			$('<span/>').addClass('stayed-for sub-column').attr('title','Length of stay in min').appendTo(d)
+			$('<span/>').addClass('last-seen sub-column').attr('title','Last seen at').appendTo(d)
+			let wwt=[], earliestTime=pad(startTime)
+			let atVersion=3
+			if(_arrivalTimes.indexOf('{"name":')===-1){
+				wwt=JSON.parse(_arrivalTimes)
+				atVersion=1
+			}
+			else{
+				if( _arrivalTimes.indexOf(':true') > -1 ){
+					atVersion=2
+				}
+				$.each(JSON.parse(_arrivalTimes), function( id, checks ) {
+					if(!wwt[checks.name]){
+						wwt[checks.name]=[]
+						wwt[checks.name].checks=[]
+					}
+					if(!wwt[checks.name].checks.includes(checks.arrived)) wwt[checks.name].checks.push(checks.arrived)
+
+					$.each(checks.checks, function( n, m ){
+						let v=atVersion==3?m:n
+						let ct=pad(v)
+						if ( ct < earliestTime ) earliestTime=ct
+						if(wwt[checks.name].checks.includes(v)) return
+						wwt[checks.name].checks.push(v)
+					})
+					if(!wwt[checks.name].checks.includes(checks.last_seen)) wwt[checks.name].checks.push(checks.last_seen)
+				})
+			}
+			$('#meet-earliestTime').text(earliestTime)
+			let eat=earliestTime.split(':')
+			let st=startTime.split(':')
+			let et=endTime.split(':')
+			let meetLength=(et[0]*60+et[1]*1)-(st[0]*60+st[1]*1)+(et[0]*1<st[0]*1?60*24:0)
+			$('#meet-length').text( meetLength )
+			let smin=Math.floor(eat[1]*1/5)*5, shr=eat[0]*1
+			let emin=Math.floor(et[1]*1/5)*5 + 5, ehr=et[0]*1
+			smin=eat[1]%5==0?smin-5:smin
+			if (smin===-5){
+				smin=55
+				shr--
+			}
+			let meetDuration=(ehr*60+emin)-(shr*60+smin)+(ehr<shr?60*24:0)
+			for (let nn=0; nn<meetDuration; nn++){
+				let ct=shr*1+':'+pad(smin)
+				let s=$('<span/>').addClass('i-'+ct.replace(':','-')).addClass('cc').attr('title', ct)
+				if (ct==startTime || ct==endTime || nn%5===0){
+					s.addClass(ct==startTime?'m-st':ct==endTime?'m-et':'')
+					if(nn%5===0) s.addClass('col5')
+					let s2=$('<span/>').text(shr*1+':'+pad(smin)).addClass('rotated')
+					s2.appendTo(s)
+				}
+				s.appendTo(d)
+				smin=(smin+1)%60
+				if(smin===0) {
+					shr++
+					shr=shr%24
+				}
+			}
+			d.appendTo('#main-table')
+			let sep=(classList.indexOf(';')>-1)?';':','
+			let cla=classList.split(sep)
+			$('#student-row-header').clone(true,true).removeAttr('id').addClass('spacer-row').appendTo('#main-table')
+			$.each(cla, function( index, value ) {
+				let d=$('#student-row-header').clone(true,true).removeAttr('id').addClass('student-row').addClass('not-present')
+				let lcn=value.trim().toLowerCase()
+				let displayName=lcn.replace(/\([^\)]*\)/g,'').replace(/\[[^\]]*\]/g,'').trim()
+				let wr=$('[data-student-name*="'+lcn+'"]')
+				if(!wr.length){
+					d.attr('data-student-name', lcn).find('.student-name').text(displayName)
+					d.attr('data-student-name', lcn).find('.student-fullname').text(lcn)
+					d.appendTo('#main-table')
+				}
+				else{
+					addWonkyData("the name <i>'"+value+"'</i> appears more than once in the <b>'classList'</b> variable<br/>&rarr; you can (and probably should) delete the duplicated entries.  Only one row has been added into the table above")
+					wr.addClass('wonky')
+				}
+			});
+			$('#student-row-header').clone(true,true).removeAttr('id').addClass('spacer-row').appendTo('#main-table')
+			$('.student-row .cc, .spacer-row .cc').text('')
+			$('#student-row-header .student-name').text('Names')
+			$('#classDate').change(function(){
+				window.location.href=($('.className:first').text()+' ('+$(this).val()+').html')
+			})
+			let _atd=JSON.parse(_arrivalTimes)
+			if( $.isEmptyObject(_atd) ){
+				addWonkyData("the <b>'_arrivalTimes'</b> variable is empty so there is no attendance information to display?!?")
+			}
+			$.each(_atd, function( id, checks ) {
+				function earliestArrivalTime(k,j){
+					if( !k ) return j
+					return (pad(k) < pad(j))? k : j
+				}
+				function lastSeenTime(k,j){
+					if( !k ) return j
+					return (pad(k) > pad(j)) ? k : j
+				}
+
+				let name=atVersion==1?id:checks.name, lcn=name.toLowerCase()
+				let wr=$('[data-student-name*="'+name.trim().toLowerCase()+'"]')
+				if(!wr.length){
+					let mmm=cla.filter(function(nn,b){
+						return nn && nn.toLowerCase().indexOf(lcn)===0
+					})
+					if(mmm.length==1){
+						wr=$('[data-student-name*="'+mmm[0].trim().toLowerCase()+'"]')
+					}
+					else{
+						let pm=cla.filter(element => element.toLowerCase().includes(lcn))
+						if(pm.length==1){
+							if(pm[0].indexOf('(')){
+								console.log(lcn+' is aliased to '+pm[0])
+								return
+							}
+							wr=$('[data-student-name*="'+pm[0].trim().toLowerCase()+'"]')
+							wr.addClass('wonky')
+							addWonkyData("the entry <i>'"+name+"'</i> in the <b>'_arrivalTimes'</b> variable does not appear in the <b>'classList'</b> variable... however, it has a partial (and unique) match to <i>'"+pm[0].trim()+"'</i> in the <b>'classList'</b><br/>&rarr; so, the results for <i>'"+name+"'</i> have been merged into the row for <i>'"+pm[0].trim()+"'</i>")
+						}
+						else{
+							addWonkyData("the entry <i>'"+name+"'</i> in the <b>'_arrivalTimes'</b> variable does not uniquely match any of the names in the <b>'classList'</b> variable?!?<br/>&rarr; a row has been appended to the bottom of the table")
+							wr=$('.student-row:last').clone(true).detach()
+							wr.addClass('wonky').attr('data-student-name', lcn).find('.student-name').text(lcn)
+							wr.addClass('wonky').attr('data-student-name', lcn).find('.student-fullname').text(lcn)
+							wr.find('.cc').removeClass('present pattern-0 pattern-1 pattern-2')
+							$('.student-row:last').after(wr)
+						}
+					}
+				}
+				let npe=wr.attr('data-num-entries'), te=!npe||npe==''?1:(1*npe+1)
+				let lat=earliestArrivalTime( wr.attr( 'data-arrived' ), checks.arrived )
+				let lst=lastSeenTime( wr.attr( 'data-left' ), checks.last_seen )
+				let nc=atVersion==3?wwt[name].checks.length:Object.keys(wwt[name].checks).length
+				$(wr).removeClass('not-present')
+				wr.find('.arrived-at').text( lat )
+				wr.find('.stayed-for').text( nc )
+				wr.find('.last-seen').text( lst )
+
+				$.each(wwt[name].checks, function( n, m){
+					let v=atVersion==1?n:m
+					let ct='i-'+v.replace(':','-')
+					$(wr).find('.'+ct).addClass('present').addClass('pattern-'+te%3)
+				})
+				wr.attr( 'data-arrived', lat ).attr( 'data-left', lst ).attr( 'data-stayed', nc ).attr( 'data-num-entries', te )
+			});
+			$('#student-row-header .student-name').html($('.student-row').length+' Names <span class="daily">('+$('.not-present').length+' absent)</span>')
+
+			$('#student-row-header .student-name').click(function(){
+				$('#main-table').toggleClass('show-sub-columns')
+			})
+			$('#student-row-header .student-name').dblclick(function(){
+				$('#main-table').toggleClass('hide-names')
+			})
+			$('.student-row :not(.student-name)')
+				.mouseenter(function(e){
+					hideToolTip(e)
+				})
+			$('.student-row .student-name')
+				.mouseenter(function(e){
+					showToolTip(e)
+				})
+				.mouseleave(function(e){
+					hideToolTip(e)
+				})
+			$('#close-summary').click(function(){
+				$('body').removeClass('showing-summary').addClass('showing-daily')
+				$('.student-row .student-name').unbind('click')
+				removeStudentFilter()
+				$('.as').hide()
+			})
+			$('#download-summary').click(function(){
+				let cn=$('.className:first').text()
+				fname='Attendance Summary - '+cn+'.html'
+				let ashtml=$('<html/>')
+				let ash=$('<head/>')
+				let asjq=$('<script/>').attr('type','text/javascript').attr('src','https://code.jquery.com/jquery-1.11.2.min.js')
+				asjq.appendTo(ash)
+				let asjs=$('<script/>').attr('type','text/javascript')
+				asjs.text($('script[data-for-summary="true"]').text()+`
+				
+$('document').ready(function(){
+	$('.student-row .student-name').click(function(e){
+		filterByStudent(e)
+	})
+	$('.class-checkbox input').click(function(e){
+		showHideClasses(e)
+	})
+	})
+	`)
+				asjs.appendTo(ash)
+				let ashs=$('<style/>').text($('style').text())
+				ashs.appendTo(ash)
+				ash.appendTo(ashtml)
+				let asb=$('<body/>').addClass('showing-summary')
+				let ash1=$('h1.summary').clone()
+				ash1.find('.btn').remove()
+				ash1.find('#close-summary').remove()
+				ash1.appendTo(asb)
+				$('ul.summary').clone().appendTo(asb)
+				let astb=$('#main-table').clone()
+				astb.find('.cc,.sub-column').remove()
+				if($('.selected').length===1){
+					let pr=$('.selected').parents('.student-row')
+					fname='Attendance Summary - '+cn+':'+pr.data('student-name').replace(/ /g,'-')+'.html'
+					astb.find('.student-row').remove()
+					astb.find('.spacer-row:last').remove()
+					pr.clone().appendTo(astb)
+					astb.find('.spacer-row').clone().appendTo(astb)
+				}
+				astb.find('.gma-pca').each(function(){
+					let t=$(this)
+				   t.attr('title', 'Arrived: '+t.data('arrived')+'\nLeft: '+t.data('left')+'\nStayed: '+t.data('stayed')+'min' )
+				})
+				astb.appendTo(asb)
+				$('#wonky-data').clone().appendTo(asb)
+				$('.legend.summary').clone().appendTo(asb)
+				$('footer').clone().appendTo(asb)
+
+				asb.appendTo(ashtml)
+				let blob = new Blob( [ ashtml[0].outerHTML ] , {type: 'text/HTML;charset=utf-8'} )
+
+				let temp_a = document.createElement("a")
+				temp_a.download = fname
+				temp_a.href = window.webkitURL.createObjectURL(blob)
+				temp_a.click()
+			})
+			
+			$('#deselect-student').click(function(){
+				removeStudentFilter()
+			})
+
+			$('#updateOldReportFiles').click(function(){
+				$(this).val('')
+			})
+			.change(function(e){
+
+				$('#louf').empty()
+				const files = e.currentTarget.files;
+				let curHead=$('head')[0].outerHTML
+				let curBody=$('body').html().replace($('#main-table').html(),'').replace($('#gma-log').html(),'').replace($('#wonky-data').html(),'')
+				let curStyles=$('style').text()
+				let oldHead=''
+				$.each(Array.from(files), function(a,f){
+					let fname=f.name
+					let reader = new FileReader();
+					reader.readAsText(f);
+					reader.onload = function(e) {
+						let fc = e.target.result
+						let htmlTxt=(new DOMParser()).parseFromString(fc, "text/html")
+						let cli=!htmlTxt.all['gma-log']?'':htmlTxt.all['gma-log'].value
+						htmlTxt.body.innerHTML=curBody
+						htmlTxt.scripts[3].textContent=document.scripts[3].textContent
+						$(htmlTxt).find('style').text( curStyles )
+						$(htmlTxt).find('#gma-log').val( cli )
+						let blob = new Blob( [ htmlTxt.all[0].outerHTML ] , {type: 'text/HTML;charset=utf-8'} )
+
+						let temp_a = document.createElement("a")
+						temp_a.download = fname
+						temp_a.href = window.webkitURL.createObjectURL(blob)
+						temp_a.click()
+						$('<li/>').text('updated ' + fname).appendTo('#louf')
+					}
+				})
+			})
+			function tallyAttendance(dd, st, fat, md){
+				//console.log('tallyAttendance', fat )
+				
+				function ontime(s,a){
+					return (timeDiff(s,a))<5
+				}
+				function timeDiff(s,a){
+					let st=s.split(':'), ar=a.split(':')
+					return (Math.max(0,(60*ar[0]+1*ar[1]) - (60*st[0]+1*st[1])))
+				}
+				let atv=!fat.match(/name.*:/ig)?1:2
+				let atd=JSON.parse(JSON.parse(fat))
+				let sep=(classList.indexOf(';')>-1)?';':','
+				let cla=classList.split(sep)
+				$.each(atd, function( id, data ) {
+					let name=(atv==1?id:data.name).toLowerCase().trim()
+					let wr=$('[data-student-name*="'+name+'"]')
+					if(!wr.length){
+						let mmm=cla.filter(function(nn,b){
+							return nn && nn.toLowerCase().indexOf(name)===0
+						})
+						if(mmm.length==1){
+							wr=$('[data-student-name*="'+mmm[0].trim().toLowerCase()+'"]')
+						}
+						else{
+							let pm=cla.filter(element => element.toLowerCase().includes(name))
+							if(pm.length==1){
+								wr=$('[data-student-name*="'+pm[0].trim().toLowerCase()+'"]')
+								wr.addClass('wonky')
+								addWonkyData("the entry <i>'"+name+"'</i> in the class on  <b>'"+dd+"'</b>  does not appear in the current <b>'classList'</b> variable... however, it has a partial (and unique) match to <i>'"+pm[0].trim()+"'</i> in the <b>'classList'</b><br/>&rarr; so, the results for <i>'"+name+"'</i> have been merged into the row for <i>'"+pm[0].trim()+"'</i>")
+							}
+							else{
+								addWonkyData("the entry <i>'"+name+"'</i> in the class on  <b>'"+dd+"'</b> does not uniquely match any of the names in the <b>'classList'</b> variable?!?<br/>&rarr; a row has been appended to the bottom of the table")
+								wr=$('.student-row:last').clone(true).detach()
+								wr.addClass('wonky').attr('data-student-name', name).find('.student-name').text(name)
+								wr.addClass('wonky').attr('data-student-name', name).find('.student-fullname').text(name)
+								wr.attr('data-student-name', name).find('.student-name').text(name)
+								wr.find('.cc').removeClass('present pattern-0 pattern-1 pattern-2')
+								wr.find('.gma-pca').remove()
+								wr.find('.as').addClass('absent')
+								$('.student-row:last').after(wr)
+							}
+						}
+					}
+					let wc=wr.find('[data-date="'+dd+'"][data-start="'+st+'"]')
+					let td=timeDiff(st, data.arrived)*100/md*1
+					let s=$('<span/>').addClass('gma-pca').css('width', Math.min(100-td*1, data.stayed*100/md*1)+'%' ).css('left', (td)+'%' ).attr('data-arrived', data.arrived ).attr('data-left', data.last_seen ).attr('data-stayed', data.stayed )
+					s.mouseenter(function(e){
+						showStudentTip(e)
+					})
+					.mouseleave(function(e){
+						hideStudentTip(e)
+					})
+					wc.removeClass('absent').attr('data-on-time', ontime(st, data.arrived))
+					s.appendTo(wc)
+				})
+			}
+			function byFileName(a,b) {			
+				return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+			}
+			function byLastModified(a,b) {			
+				return a.lastModified < b.lastModified ? -1 : a.lastModified > b.lastModified ? 1 : 0;
+			}
+			function addClassCheckbox(cn) {			
+				let ll=$('<label/>').addClass('class-checkbox').attr('data-class-name',cn)
+				let cb=$('<input/>').attr('data-class-name',cn).attr('type','checkbox').attr('checked','checked')
+				ll.click(function(e){
+					showHideClasses(e)
+				})
+				ll.html(cb[0].outerHTML+cn)
+				$('.for-student:first').after(ll)
+			}
+			function checkClassList(cl, cn) {
+				let sep=(cl.indexOf(';')>-1)?';':','
+				$.each(cl.split(sep), function(k, v ) {
+					let name=v.toLowerCase().trim()
+					let displayName=name.replace(/\([^\)]*\)/g,'').replace(/\[[^\]]*\]/g,'').trim()
+					let wr=$('[data-student-name*="'+name+'"]')
+					if(!wr.length){
+						wr=$('.student-row:last').clone(true).detach()
+						wr.removeClass('wonky').attr('data-classes', cn)
+						wr.attr('data-student-name', name).find('.student-name').text(displayName)
+						wr.attr('data-student-name', name).find('.student-fullname').text(name)
+						wr.find('.cc').removeClass('present pattern-0 pattern-1 pattern-2')
+						wr.find('.gma-pca').remove()
+						wr.find('.as').addClass('absent')
+						$('.student-row:last').after(wr)
+					}
+					else{
+						let ccl=wr.attr('data-classes')||''
+						let ncl=ccl==''||ccl=='undefined'?cn:(ccl+','+cn)
+						wr.attr('data-classes', ncl)
+					}
+				})
+			}
+
+			let summaryGenerated=false
+			$('#attendance-summary').click(function(e){
+				$('#student-row-header .student-name').html('Names')
+				if (className=='') {
+					alert("You cannot generate a summary from this file (because it does not contain any attendance data)!  This file exists to insert the new code into one of your existing attendance files.\n\n1. Click the `Choose Files` button below to update one of your Attendance files from a past Meet, and then\n2. Open that file and finally click `Show Attendance Summary` button\n\nContact me (Al) if you still need help")
+					return false
+				}
+				$('.student-row .student-name').click(function(e){
+					filterByStudent(e)
+				})
+				if(!summaryGenerated){
+					$(this).val('')
+				}
+				else{
+					$('body').addClass('showing-summary').removeClass('showing-daily')
+					$('.class-checkbox input:checked').each(function(a,b){
+						let ccn=$(this).data('class-name')
+						$('.as[data-class-name="'+ccn+'"]').fadeIn('slow')
+					})
+					e = e || window.event;
+					e.stopPropagation()
+					return false
+				}
+			})
+			.change(function(e){
+				const files = [...e.currentTarget.files];
+				
+				$('body').addClass('showing-summary').removeClass('showing-daily')
+				
+				let sep=(classList.indexOf(';')>-1)?';':','
+				let cla=classList.split(sep)
+				$.each([...files].sort(byLastModified), function(a,f){
+					let fname=f.name
+					let reader = new FileReader();
+					reader.readAsText(f);
+					reader.onload = function(e) {
+						summaryGenerated=true
+						let fc = e.target.result
+						let htmlTxt=(new DOMParser()).parseFromString(fc, "text/html")
+						let vars=htmlTxt.scripts[0].innerText
+						let fcn=vars.match(/className=.*/)[0].split('=')[1].replace(/"/g,'')
+						if($('.className').text().indexOf(fcn)==-1){
+							$('.className').text($('.className:first').text()+', '+fcn)
+						}
+						if($('input[data-class-name="'+fcn+'"]').length===0){
+							addClassCheckbox(fcn)
+							let fcl=vars.match(/classList=.*/)[0].split('=')[1].replace(/"/g,'')
+							checkClassList(fcl, fcn)
+						}
+						let fcd=vars.match(/classDate=.*/)[0].split('=')[1].replace(/"/g,'')
+						let fst=vars.match(/startTime=.*/)[0].split('=')[1].replace(/"/g,'')
+						let fet=vars.match(/endTime=.*/)[0].split('=')[1].replace(/"/g,'')
+						let fs=fst.split(':'), fe=fet.split(':')
+						let mdur=(fst, fet, 60*fe[0]+1*fe[1]) - (60*fs[0]+1*fs[1])
+					
+						if( $('[data-date="'+fcd+'"][data-start="'+fst+'"]').length==0 ){
+							let s=$('<span/>').addClass('as').attr('data-class-name', fcn).attr('data-date', fcd).attr('data-start', fst).css('flex-grow', mdur)
+							s.clone().addClass('absent').appendTo('.student-row')
+							let a=$('<a/>').attr('href',fname).html(fcn+'<br/>'+fcd+'<br/>'+fst+'&rarr;'+fet)
+							s.mouseenter(function(e){
+								showSummaryTip(e)
+							})
+							.mouseleave(function(e){
+								hideSummaryTip(e)
+							})
+
+							s.clone(true, true).attr('data-end', fet).attr('data-duration', mdur).html(a).appendTo('#student-row-header')
+						}
+						let fat=vars.match(/_arrivalTimes=.*/)[0].split('=')[1]
+						tallyAttendance(fcd, fst, fat, mdur)
+
+					}
+				})
+			})
+        });
+		
+	</script>
+	<script type='text/javascript' data-for-summary="true">
+		function showHideClasses(e){
+			let tgt=$(e.target), cn=tgt.data('class-name')
+			if(tgt.hasClass('disabled')) return false
+			let isChecked=$('input[data-class-name="'+cn+'"]').is(':checked')
+			$('.as[data-class-name="'+cn+'"]')[isChecked?'fadeIn':'fadeOut']('slow')
+			if($('.selected').length==1) return
+			$('.student-row[data-classes*="'+cn+'"]').fadeOut('slow')
+			$('.class-checkbox input:checked').each(function(a,b){
+				let ccn=$(this).data('class-name')
+				$('.student-row[data-classes*="'+ccn+'"]').fadeIn('slow')
+			})
+		}
+		function filterByStudent(e){
+			let tgt=$(e.target)
+			if(tgt.hasClass('selected')){
+				removeStudentFilter()
+			}
+			else{
+				let pr=tgt.parents('.student-row')
+				pr.siblings('.student-row').fadeOut('slow')
+				$('#wonky-data, #up-rev-files').fadeOut('slow')
+				$('.for-student').text(pr.data('student-name'))
+				$('#deselect-student').fadeIn('slow').css("display","inline-block")
+				tgt.addClass('selected')
+				let cl=pr.data('classes').split(',')
+				$('.class-checkbox').addClass('disabled')
+				$('.class-checkbox input').attr('disabled',true)
+				$('.as').hide()
+				$.each(cl, function( n, ccn ){
+					$('.class-checkbox[data-class-name="'+ccn+'"]').removeClass('disabled')
+					$('input[data-class-name="'+ccn+'"]').attr('disabled', false)
+					if($('[data-class-name="'+ccn+'"]').is(':checked')){
+						$('.as[data-class-name="'+ccn+'"]').fadeIn('slow')
+					}
+				})
+			}
+		}
+		function removeStudentFilter(){
+			$('.student-row,#wonky-data, #up-rev-files').fadeIn('slow').css("display","")
+			$('#deselect-student').fadeOut('slow')
+			$('.for-student').empty()
+			$('.selected').removeClass('selected')
+			$('.class-checkbox').show()
+			$('.class-checkbox').removeClass('disabled')
+			$('.class-checkbox input').attr('disabled',false)
+
+			$('.student-row, .as').hide()
+			$('.class-checkbox input:checked').each(function(a,b){
+				let ccn=$(this).data('class-name')
+				$('.student-row[data-classes*="'+ccn+'"]').fadeIn('slow')
+				$('.as[data-class-name="'+ccn+'"]').fadeIn('slow')
+			})				
+		}
+	</script>
+	<style>
+		.summary, .showing-daily .summary, .showing-summary .daily{ display: none; }
+		.showing-summary .summary { display: inherit; }
+		div#main-table { border-top: 2px solid; border-bottom: 2px solid; box-shadow: #555 2px 2px 2px; width: fit-content; min-width: 50%; }
+		#main-table.show-sub-columns .sub-column{ display: inline-block; }
+		#main-table.show-sub-columns .student-name{ display:none }
+		#main-table.show-sub-columns #student-row-header .student-name, #main-table.show-sub-columns .student-fullname{ display: inline-block; width: 228px; }
+		#main-table #student-row-header .student-name:after { content: '☆'; padding-left: 6px; }
+		#main-table.show-sub-columns  #student-row-header .student-name:after { content: '★'; padding-left: 6px; }
+		.cc { border-left: 1px solid #ccc; flex: 1; min-width: 14px; position: relative;}
+		.rotated { bottom: 10px; display: inline-block; font-size: smaller; left: -8px; position: absolute; transform: rotate(-90deg);  }
+		.col5{ border-left: 2px solid #333;	}
+		.student-row, .spacer-row { display:flex; position: relative; }
+		.student-row:nth-child(2n+1), .showing-summary .student-row:nth-child(2n+1){ background-color: #ddd; }
+		.student-row.not-present , .legend .cc.absent, .student-row .as.absent{ background-color: #ffccccaa; }
+		.student-row:nth-child(5n+1) { border-bottom: 1px solid #aaa; }
+		.student-row:hover { background-color: #3b770355; border: 2px solid #738ca0; border-left: 0; border-right: 0; }
+		.student-row.not-present:hover { background-color: #ef9494; }
+		.spacer-row { height: 6px; }
+		.student-name, .student-fullname, .spacer-student-name { border-left: 2px solid #333; cursor:pointer; display: inline-block; min-width: 100px; overflow: hidden; text-overflow: ellipsis; text-transform: capitalize; white-space: nowrap; min-width: 196px; width: 196px; }
+		.student-fullname{ display: none; }
+		#student-row-header .student-fullname{ display: none!important; }
+		.hide-names .student-row .student-name, .hide-names .student-row .student-fullname{ color: transparent; }
+		.student-row .student-name::before, .show-sub-columns .student-row .student-fullname::before { content: "✔ "; color: #3b7703; }
+		.student-row:last-child { border-bottom: 2px solid #333; }
+		.not-present .student-name::before,.show-sub-columns .not-present .student-fullname::before, .showing-summary .student-row .student-name::before  { content: " "; padding-right: 15px; }
+		.showing-summary .cc, .as { display: none; }
+		.cc, .showing-summary .as { flex: 1; display:inline-block;}
+		.as{ border-left: 1px solid; min-width: 88px; }
+		.as a{ color:#EEE; text-decoration: none; }
+		.showing-summary .student-row { background-color: unset; }
+		.showing-summary .student-row:hover { background-color: #3b770355; border: 2px solid #738ca0; border-left: 0; border-right: 0; }
+		fieldset { background: #eee; border-radius: 12px; margin: 20px 3px; }
+		legend { font-weight: bold; }
+		.legend p{ margin: 1px; }
+		.legend .cc { background-color: #629235; border: 0px; display: inline-block; height: 20px;max-width: unset; min-width: 11px; padding: 0px 8px; vertical-align: middle;  }
+		.legend .cc.present.grey { background-color: #5B8B2E; }
+		.legend .cc.missing.grey { background-color: #ddd; }
+		.legend .cc.missing.white { background-color: #fff; }
+		.present { background: #3b7703cc; }
+		.student-row .as { background: #3b770377; position: relative; }
+		#student-row-header { background: #777; border-bottom: 3px double #333; color: white; display: flex; font-weight: bold; height: 36px; position: relative; text-align:center; }
+		#student-row-header .student-name, #student-row-header .sub-column { padding-top: 12px; }
+		.showing-summary h1 .className { display: none; }
+		p .className, #classDate, #meet-startTime, #meet-endTime, #meet-length, #meet-earliestTime, #meet-meet-id{ font-weight:bold; margin-right: 24px; }
+		.legend .className { font-style: italic; margin-right: 0; }
+		#classDate:hover{ cursor: pointer; }
+		#meet-length:after { content: " min"; font-weight: normal; }
+		#meet-meet-id:empty:before { content: "n/a"; }
+		body > #gmatt-tooltip, body > #summary-tooltip, body > #student-tooltip { display: none!important; }
+		#gmatt-tooltip{ position: absolute; background:#cbdbbc; border:2px solid #3e6914; border-radius:8px; color: #222; display:none; padding: 4px 8px; left: 134px; top:-4px; z-index:88; }
+		#summary-tooltip{ position: absolute; background:#cbdbbc; border:2px solid #3e6914; border-radius:8px; color: #222; display:none; font-weight: normal; left: -14px; padding: 4px 8px; top:42px; white-space: nowrap; width: 108px; z-index:88; }
+		#student-tooltip{ position: absolute; background:#cbdbbc; border:2px solid #3e6914; border-radius:8px; color: #222; display:none; font-weight: normal; left: -14px; padding: 4px 8px; top:22px; white-space: nowrap; width: 108px; z-index:88; }
+		.showing-summary #gmatt-tooltip{ display: none!important; }
+		.student-row.not-present #gmatt-tooltip { background:#ffafaf; border-color: #7b3900; }
+		.student-row.not-present #gmatt-tooltip .was-present { display: none; }
+		.student-row.not-present #gmatt-tooltip .was-absent { display: block; }
+		.student-row #gmatt-tooltip .was-absent { display: none; }
+		.sub-column { display: none; text-align: center; width: 48px; }
+		.arrived-at { border-left: 1px solid;  }
+		#student-row-header .arrived-at:before{ content: "Arr"}
+		#student-row-header .stayed-for:before{ content: "min"}
+		#student-row-header .last-seen:before{ content: "Last"}
+		.pattern-2 { background: repeating-linear-gradient( 45deg, #3b7703dd, #3b770377 2px, #3b7703cc 3px, #3b7703ff 3px )!important; }
+		.pattern-0 { background: repeating-linear-gradient( -45deg, #3b7703dd, #3b770377 1px, #3b7703cc 2px, #3b7703ff 3px  )!important; }
+		.m-st { border-left: 5px double #82020266; }
+		.m-et { border-right: 5px double #82020266!important; }
+		#student-row-header .m-st, #student-row-header .m-et { background-color: #82020266;}
+		#questions, #attendance-summary-label, #close-summary { background: lightblue; border: 2px solid blue; border-radius: 12px; box-shadow: #bbb 4px 4px 8px; font-family: sans-serif; font-weight: bold; margin: 0 0 0 48px; opacity: .75; padding: 6px; text-decoration: none; vertical-align: middle; white-space: nowrap; font-size: 14px;}
+		#questions { font-size: 30px; font-weight: bold; padding: 0px 8px; position: absolute; right: 24px; top: 13px; }
+		#questions:hover, #attendance-summary-label:hover , #close-summary:hover { opacity: 1; }
+		#questions:active, #attendance-summary-label:active, #close-summary:active { opacity: .333; right: 21px; top: 15px; }
+		#logging-info { display: none; }
+		#logging-info.showing { display: block; }
+		#gma-log { width: 100%; }
+		#gma-log:focus { height: 500px; }
+		.wonky-header{ display: none; font-weight: bold; margin: 0; } 
+		.wonky-header:first-of-type { display: revert; }		
+		#wonky-data { background-color: #fff98a; border: 1px solid #444; border-radius: 12px; padding: 12px; }
+		#wonky-data:empty { display: none; }
+		#wonky-data li { margin-left: 20px; }
+		.wonky .student-name, .wonky .student-fullname { background: #fff98a; }
+		.wonky .student-name::after, .wonky .student-fullname::after, #wonky-data .wonky::after { color: red; content: " **"; }
+		.gma-pca { background: #3b7703; border-radius: 6px; display: inline-block; height: 12px; margin: 3px 0; position:absolute; }
+		.gma-pca:hover { border: 2px solid #1f4001; height: 8px; margin: 3px 0px; }
+		#attendance-summary{ display: none; }
+		.btn { background: #777; border-radius: 12px; box-shadow: #999 3px 3px 6px; color: white; display: inline-block; font-size: 14px; font-weight: bold; height: 18px; margin: 0 5px 2px 5px; opacity: .7; padding: 1px 3px 5px 3px; text-align: center; vertical-align: middle; width: 18px; }
+		.btn:hover { color: #ff787e; opacity: 1; }
+		.btn:active { margin: 2px 3px 0 7px; opacity: .33; }
+		#download-summary { text-decoration: underline; }
+		#deselect-student { display: none; }
+		.for-student { text-transform: capitalize; }
+		.for-student::before { content: ": "; }
+		.for-student:empty::before { content: ""; }
+		.class-checkbox { cursor: pointer; margin: 0 0 0 20px;}
+		.class-checkbox input{ cursor: pointer; }
+		.disabled, .disabled input{ color: #999; cursor: not-allowed; }
+		#class-notes:empty { display: none; }
+		#class-notes { white-space: pre; }
+		#class-notes:before { content: "Class Notes:"; display: block; font-weight: bold; }
+		.showing-summary .student-row:not([data-classes]) { display: none; }
+
+	</style>
+	</head>
+	<body>
+
+	<div id='attendance-report' data-monitor-checked='true'>
+		<h1 class='daily'>Daily Attendance Report for <span class="className"></span>: <span class="classDate"></span><label for='attendance-summary' id="attendance-summary-label"><input type="file" id="attendance-summary" multiple="">Show Attendance Summary</label></h1>
+		<h1 class="summary">Attendance Summary Report for <span class="className"></span> <span class="for-student"></span><span id="deselect-student" class='btn' title='Show all students'>X</span><span id="download-summary" class='btn' title='Download the current summary'>🠟</span><button id="close-summary">Close the Summary</button></h1>
+		<ul class='summary'>
+			<li>Click a class name checkbox above to show/hide the entries for that class
+			<li>Click a student name below to show just that student; click again the student name again to show all students
+		</ul>
+		<p>
+			<span class='daily'>
+				Class:<span class="className"></span>
+				Meet ID: <span id="meet-meet-id"></span>
+				Date: <select id="classDate"></select> 
+					Earliest Arrival(s): <span id="meet-earliestTime"></span>  
+					Start Time: <span id="meet-startTime"></span> 
+					End Time: <span id="meet-endTime"></span> 
+					Length of Meet: <span id="meet-length"></span>
+					
+			</span>
+			
+			<a id="questions" title="Send questions or feedback" target="_blank" href="mailto:al@caughey.ca?subject=Questions/Feedback about Attendance report&amp;body=Before sending this message, please check to see whether your issue has been noted on:%0D%0A- the Facebook page [https://www.facebook.com/GoogleMeetAttendance], or %0D%0A- in the videos at my YouTube channel [https://www.youtube.com/c/AllanCaughey/]  %0D%0A%0D%0AOtherwise, please provide as much information in this email as possible - for example: a description of the problem, screenshots that highlight the issue.  It would be *really* helpful if you also attached the HTML file in question.%0D%0A%0D%0AThanks for your assistance%0D%0A%0D%0AAl">&#9993;</a>
+		</p>
+		<p id='class-notes'></p>
+		<div id="main-table"></div><ul id="wonky-data"></ul>
+		 <fieldset class="legend summary">
+			<legend>Attendance Summary Legend:</legend>
+			<p>This report summarizes date for the following class(es): `<span class="className">ICS2O</span>`.</p>
+			<p><span class="cc present" title="Student was present">The student was present for some or all of the class.  The green bar in the field shows the approximate arrival time and length of stay.</span>  A gap between two (or more) green bars within a class indicates that the student joined, left and then rejoined again.</p>
+			<p><span class="cc absent" title="Student was absent">The student missed the entire class</span></p>
+			<p>The widths of the columns shows the approximate length of the Meet relative to the others</p>
+			<p><b><u>NB</u></b> - If you want a printed copy of this report, make sure that the 'More settings' → 'Background graphics' checkbox is checked in the Print dialog.</p>
+		 </fieldset>
+		 <fieldset class="legend daily">
+			<legend>Daily Attendance Legend:</legend>
+			<p><span class="cc present" title="Student was present">The student was present</span><span class="" title="Student left the meet"> then exited </span><span class="cc present pattern-2" title="Student was present">rejoined</span><span class="cc present pattern-0" title="Student was present">and rejoined again</span><span class="cc present" title="Student was present"> etc.</span><span class="cc present pattern-2" title="Student was present"> etc.</span> (the alternating background patterns indicate that the student may have left and rejoined the Meet)</p>
+			<p><span class="cc absent" title="Student was absent">The student missed the entire class</span></p>
+			<p>To help your eye follow across the page, the table rows alternate between white and <span class="cc missing grey"> grey </span> backgrounds which leads to two subtly different shades of green for the times when the student was present</p>
+			<p><b><u>NB</u></b> - If you want a printed copy of this report, make sure that the 'More settings' → 'Background graphics' checkbox is checked in the Print dialog.</p>
+		 </fieldset>
+		 <fieldset id="logging-info" class="legend">
+			<legend>Logging Information:</legend>
+			<textarea id="gma-log"></textarea>
+		</fieldset>
+		 <fieldset id="up-rev-files" class="legend">
+			<legend>Up-Rev Prior Attendance Reports:</legend>
+			<p>This allows you to update your old Attendance reports to the latest version of the HTML file.  This will fix a number of issues and errors in the earlier versions of the reports.</p>
+			<ul>
+				<li>Click the 'Choose files' button below and then navigate to the location where your old attendance reports are located.<br>By default, the attenance reports are saved to your <i>'Downloads'</i> directory but you can (and probably should) move them to a more permanent location.
+				</li><li>The updated files will get saved once again to your <i>'Downloads'</i> directory.  <br> Browser security dictates that the files can only be written to that directory... I cannot automatically save them elsewhere.
+				</li><li><b>NB</b> - you can update several files at once using the <i>&lt;shift&gt;</i> and/or <i>&lt;ctrl&gt;</i> keys to select multiple files (but you will likely have to click <i>'Allow'</i> in a system dialog before the updated reports are download).
+			</li></ul>
+			<p><input type="file" id="updateOldReportFiles" multiple=""></p>
+			<ol id="louf"></ol>
+		</fieldset>
+	</div>
+	<footer>
+		<p>Generated by the <a href="https://chrome.google.com/webstore/detail/fkdjflnaggakjamjkmimcofefhppfljd/publish-accepted?authuser=0&amp;hl=en" target="_blank">Google Meet Attendance extension (v0.9.1)</a></p>
+	</footer>
+
+<div id="gmatt-tooltip">
+		<div class="was-present">
+			Arrived: <span id="gmatt-arr"></span><br>
+			Departed: <span id="gmatt-lft"></span><br>
+			Stayed: <span id="gmatt-sty"></span>min<br>
+			Entries: <span id="gmatt-ne"></span>
+		</div>
+		<div class="was-absent">
+			Absent
+		</div>
+</div>
+<div id="summary-tooltip">
+	Start: <span id="sum-sta"></span><br>
+	End: <span id="sum-end"></span><br>
+	Duration: <span id="sum-dur"></span>min<br>
+</div>
+<div id="student-tooltip">
+	Arrived: <span id="stu-arr"></span><br>
+	Departed: <span id="stu-lft"></span><br>
+	Stayed: <span id="stu-sty"></span>min<br>
+</div>
+</body></html>

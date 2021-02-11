@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Programming lessons</title>
+        <script>
+            function domFunc() {
+                var domP = document.getElementById("dom-p");
+                var firstChildOfP = domP.firstChild;
+                // console.log(firstChildOfP);
+
+                var allParas = Array.from(document.getElementsByTagName("p"));
+                console.log(allParas);
+
+                
+                allParas.forEach(x => {
+                    x.style.backgroundColor = "yellow";
+                });
+
+                for (const key in domP) {
+                    if (Object.hasOwnProperty.call(domP, key)) {
+                        const element = domP[key];
+                        console.log(element);
+                    }
+                }
+
+                // for (const iterator of allParas) {
+                //     console.log(iterator.style.backgroundColor.valueOf());
+                // }
+            }
+
+            function move() {
+                var movingElement = document.getElementById("animate");
+                var topPos = movingElement.style.top;
+                var leftPos = movingElement.style.left;
+
+                var id = setInterval(frameMove, 5);
+
+                function frameMove() {
+                    if (topPos == 720 || leftPos == 720) {
+                        clearInterval(id);
+                    }
+
+                    else {
+                        topPos++;
+                        leftPos++;
+                        movingElement.style.top = topPos + "px";
+                        movingElement.style.left = leftPos + "px";
+                    }
+                }
+            }
+        </script>
+        <style>
+            #animate {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                background-color: red;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="domFunc();">Javascript DOM Functions</button>
+        <br><br>
+        <div id="contents"></div>
+        <div id="dom-div">
+            <p id="dom-p">
+                This is a paragraph of text with a
+                <a href="page.html">link</a>.
+            </p>
+        </div>
+        <br><br>
+        <button onclick="move();">Click this button to move the div</button>
+        <br><br>
+        <div id="animate"></div>
+    </body>
+</html>

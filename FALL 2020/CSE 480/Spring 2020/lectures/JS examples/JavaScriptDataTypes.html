@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+
+<p id="demo1"></p>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Numbers can be written with, or without decimals:</p>
+
+<p id="demo2"></p>
+
+<h2>JavaScript Arrays</h2>
+
+<p>Array indexes are zero-based, which means the first item is [0].</p>
+
+<p id="demo3"></p>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo4"></p>
+
+<p>The typeof operator returns the type of a variable or an expression.</p>
+
+<p id="demo5"></p>
+
+<h2>JavaScript</h2>
+
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+<p id="demo6"></p>
+
+<h2>JavaScript</h2>
+
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+<p id="demo7"></p>
+
+<h2>JavaScript</h2>
+
+<p>The value (and the data type) of a variable with no value is <b>undefined</b>.</p>
+
+<p id="demo8"></p>
+
+<h2>JavaScript</h2>
+
+<p>An empty string has both a legal value and a type:</p>
+
+<p id="demo9"></p>
+
+<script>
+var answer1 = "It's alright";
+var answer2 = "He is called 'Johnny'";
+var answer3 = 'He is called "Johnny"';
+
+document.getElementById("demo1").innerHTML =
+answer1 + "<br>" + 
+answer2 + "<br>" + 
+answer3;
+
+var x1 = 34.00;
+var x2 = 34;
+var x3 = 3.14;
+
+document.getElementById("demo2").innerHTML =
+x1 + "<br>" + x2 + "<br>" + x3;
+
+var cars = ["Saab","Volvo","BMW"];
+
+document.getElementById("demo3").innerHTML = cars[0];
+
+var person = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
+};
+
+document.getElementById("demo4").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+
+document.getElementById("demo5").innerHTML = 
+typeof "" + "<br>" +
+typeof "John" + "<br>" + 
+typeof "John Doe" + "<br>" +
+typeof 0 + "<br>" +
+typeof 314 + "<br>" +
+typeof 3.14 + "<br>" +
+typeof (3.14);
+
+var x = "16" + 4 + "Volvo";
+document.getElementById("demo6").innerHTML = x;
+
+var x = 16+ "Volvo" +  4;
+document.getElementById("demo7").innerHTML = x;
+
+var car;
+document.getElementById("demo8").innerHTML =
+car + "<br>" + typeof car;
+
+var car = "probox";
+document.getElementById("demo9").innerHTML =
+"The value is: " +
+car + "<br>" +
+"The type is: " + typeof car;
+
+</script>
+
+</body>
+</html>
+
+

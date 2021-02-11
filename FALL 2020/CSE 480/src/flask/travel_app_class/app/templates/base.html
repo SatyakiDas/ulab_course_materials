@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Traveler's Companion</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+        <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+    </head>
+    <body>
+        <h1>Traveler's Companion</h1>
+        <h2>Essential information for traveling abroad</h2>
+        <div>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('search') }}">Search</a></li>
+                <li><a href="{{ url_for('europe') }}">Europe</a></li>
+            </ul>
+        </div>
+
+        {% block content %} {% endblock %}
+    </body>
+</html>

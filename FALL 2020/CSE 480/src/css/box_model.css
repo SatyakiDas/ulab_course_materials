@@ -1,0 +1,29 @@
+.box200px {
+    margin: 20px;
+    padding: 10px;
+    border-width: 10px;
+    border-style: solid dashed;
+    border-color: blue red orange gray;
+}
+
+.pos-test {
+    background-color: blue;
+    height: 100px;
+    width: 150px;
+}
+
+.table-styling {
+    background-color: aqua;
+}
+
+#extra-padding {
+    padding: 10px;
+}
+
+#diff-bgcolor {
+    background-color: blueviolet;
+}
+
+#diff-bgclr-row {
+    background-color: tomato;
+}

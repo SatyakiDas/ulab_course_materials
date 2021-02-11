@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <success>true</success>
+    <message>User registered successfully</message>
+    <data>
+        <username>01767284445</username>
+    </data>
+</response>

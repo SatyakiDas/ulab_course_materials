@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Programming lessons</title>
+        <script>
+            function progFunc() {
+                var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+                var del = cars.splice(2, 3);
+                
+                // document.getElementById("contents").innerHTML = cars;
+
+                // var myArr = [];
+                // myArr[0] = "Arafat";
+                // myArr[1] = "Sadia";
+                // document.getElementById("contents").innerHTML = myArr.length;
+
+                
+                var person = {
+                    firstName: "Arafat",
+                    lastName: "Kamal",
+                    ownedCars: cars
+                };
+
+                document.getElementById("contents").innerHTML = person["firstName"] + " " + person["lastName"] + " owns " + person["ownedCars"];
+            }
+
+            function domFunc() {
+                var domDiv = document.getElementById("dom-div");
+                console.log(domDiv.childNodes);
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="progFunc();">Click this button to run Javascript.</button>
+        <button onclick="domFunc();">Javascript DOM Functions</button>
+        <br><br>
+        <div id="contents"></div>
+        <div id="dom-div">
+            <p id="dom-p">
+                This is a paragraph of text with a
+                <a href="page.html">link</a>.
+            </p>
+        </div>
+    </body>
+</html>

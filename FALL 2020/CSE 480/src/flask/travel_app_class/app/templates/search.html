@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>{{ title }}</h3>
+<p> Please enter the country you’d like to find information for: 
+    <input id="countryName" name="countryName" required="" size="30" type="text" value="">
+</p>
+<button onclick="countrySearch();">Search!</button>
+<div id="result"></div>
+<!-- <form action="" method="post" name="country_search">
+    <p> Please enter the country you’d like to find information for: 
+        <input id="countryName" name="countryName" required="" size="30" type="text" value="">
+    </p>
+    <button onclick="countrySearch();">Search!</button>
+    <div id="result"></div>
+    <input type="submit" value="Search!" onclick="countrySearch();">
+    {% if countryInfo %}
+    <br/>
+        <b>Capital:</b> {{ countryInfo['capital'] }} <br/>
+        <b>Languages:</b> {{ countryInfo['lang'] }} <br/>
+        <b>Currency:</b> {{ countryInfo['currency'] }} <br/>
+    {% endif %}
+</form> -->
+
+<script type="text/javascript">
+$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+function countrySearch() {
+    $.getJSON(
+        $SCRIPT_ROOT+"/get_info",
+        {
+            countryName: $("#countryName").val()
+        },
+        function (data) {
+
+            $("#result").append(`<br/>
+                <b>Capital:</b> ${data["capital"]} <br/>
+                <b>Languages:</b> ${data["lang"]} <br/>
+                <b>Currency:</b> ${data["currency"]} <br/>`
+            );
+        }
+    );
+    var input = $("#countryName");
+    console.log(input);
+}
+</script>
+
+{% endblock %}

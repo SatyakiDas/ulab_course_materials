@@ -1,0 +1,16 @@
+p, h1, h2 {
+    background-color: red;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-style: italic;
+}
+
+pre {
+    background-image: url(../jung-ho-park-XaSkOlaodcU-unsplash.jpg);
+}

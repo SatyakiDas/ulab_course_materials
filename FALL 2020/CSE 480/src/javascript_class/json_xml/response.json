@@ -1,0 +1,9 @@
+{
+    "response": {
+        "success": true,
+        "message": "User registered successfully",
+        "data": {
+            "username": "01767284445"
+        }
+    }
+}

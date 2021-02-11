@@ -1,0 +1,9 @@
+
+FUNCTION selection_sort(arr, n):
+    for i=0 to n-1:
+		min_index = i
+		for j=i+1 to n:
+			if arr[j] < arr[min_index]:
+				min_index = j
+		if min_index != i:
+			swap arr[min_index] and arr[i]

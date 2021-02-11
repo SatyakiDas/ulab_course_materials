@@ -1,0 +1,67 @@
+p.stylized-header {
+    background-image: url(../jung-ho-park-XaSkOlaodcU-unsplash.jpg);
+    color: darkblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    position: absolute; 
+    left: px;
+    top: 2275px;
+    height: 150px;
+    width: 300px;
+    z-index: -1;
+}
+
+#text-properties-test {
+    text-align: justify;
+    text-decoration: line-through;
+    line-height: 50px;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    text-indent: 20px;
+    margin-top: 1500px;
+}
+
+.shout {
+    background-color: #09f609;
+}
+
+.special {
+    background-color: #ee0be3;
+}
+
+.default-bgcolor {
+    background-color: gold;
+}
+
+.floating-para {
+    float: right;
+}
+
+.width-45 {
+    width: 45%;
+}
+
+.container-error {
+    border: 2px dashed black;
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+}
+
+div p {
+    background-color: blueviolet;
+}
+
+a:visited {
+    color: #09f609;
+}
+
+a:hover {
+    color: #ee0be3;
+}
+
+a:link {
+    color: #f6e70b;
+}

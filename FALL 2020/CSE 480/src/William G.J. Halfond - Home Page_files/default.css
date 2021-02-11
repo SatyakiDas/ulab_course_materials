@@ -1,0 +1,227 @@
+body {
+	background-color: #333333;
+}
+
+
+.mainpage {
+	background-color: #EEEEEE;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	width: 80%;
+	border: solid thin #000000;
+}
+
+div.banner {
+	background-color: #990000;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	border-bottom: solid thin #000000;
+	padding-bottom: .5em;
+	
+}
+
+table.layout {
+	width: 99%;
+	border: none;
+	background-color: transparent;
+	color: #EEEEEE;
+}
+
+td.layout {
+	border: none;
+}
+
+
+div.uscname {
+	color: #FFCC00;
+	font-family: sans-serif;
+	text-align: left;
+	font-size: small;
+	font-weight: 700;
+}
+
+
+div.maintitle {
+	font-size: x-large;
+	font-weight: bold;
+	font-family: sans-serif;
+	margin: .5em 0em 0em 1em;
+	text-align: left;
+}
+div.subtitle {
+	font-size: large;
+	font-weight: bold;
+	font-family: sans-serif;
+	margin-bottom: 0em;
+	margin-top: .3em;
+	margin-left: 1.5em;
+	text-align: left;
+}
+
+div.pagetitle {
+	text-align: left;
+	margin: .5em 0em 0em 1em;
+	font-size: x-large;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+h1 {
+	
+}
+
+h2 {
+	font-size: large;
+	font-weight: bold;
+	font-family: sans-serif;
+	margin-top: 1.6em;
+	margin-bottom: .3em;
+}
+
+h3 {
+	font-size: normal;
+	font-weight: normal;
+	font-family: sans-serif;
+	margin-left: 1em;
+	margin-bottom: .5em;
+}
+div.navlinks {
+	background-color: #990000;
+	margin: 0px 0em 0em 0em;
+	text-align: right;
+	color: #EEEEEE;
+}
+a.navlink {
+	margin: 0px 4px 0px 4px;
+	text-decoration: none; 
+	color: #EEEEEE;
+	font-size: small;
+	font-weight: 700;
+}
+a.navlink:hover {
+	text-decoration: underline; 
+	color: white;
+}
+
+
+div.maincontent {
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 1em;
+}
+
+div.footer {
+	background-color: #990000;
+	padding: 1em;
+	margin: 0px;
+	border-top: solid thin #000000;
+	text-align: right;
+	clear: both;
+}
+
+div.selfinfo {
+	float:right;
+	margin: 1em;
+	margin-left: 2em;
+}
+div.contactinfo {
+	margin-left: 1.4em;
+	line-height: 1.4em;
+}
+div.contactinfoheader {
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+	border-bottom: 	dotted thin #000000;
+	margin-bottom: 5px;
+	
+}
+img.selfpicture {
+	margin-bottom: 1em;
+}
+
+p.aboutme {
+	margin-top: 1.3em;
+	margin-left: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+
+p.main {
+	margin-top: 1.3em;
+	margin-left: 0;
+	margin-bottom: 1.3em;
+}
+
+ul.newsitems {
+	margin-top: .5em;
+	margin-left: 1.2em;
+}
+li.newsitem {
+	margin: .4em;
+}
+
+table {
+	border:solid thin #000000;
+	float: right;
+	margin: .5em 0em .3em 1em;
+}
+
+table.schedule {
+	border:solid thin #000000;
+	margin: 1em 1em 1em 1em;
+	float: none;
+
+}
+
+p.text {
+	margin-left: 1em;
+	width: 75%;
+}
+
+b.qi {
+	margin-left: 1em;
+}
+
+th {
+	border:solid thin #000000;
+}
+
+td {
+	border:solid thin #000000;
+	padding: 1px 3px 1px 3px;
+	text-align: center;
+}
+
+caption {
+	font-weight: bold;
+	caption-side: bottom;
+	font-size: small;
+	margin-bottom: .8em;
+	
+}
+td.left-align {
+	text-align: left;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.download {
+	float: right;
+	text-align: center;
+	margin: .5em;
+	padding: .3em .3em .3em 1em;
+	border-left: dashed thin Gray;
+}
+
+span.techniquename {
+	font-variant: small-caps;
+	font-weight: 550;
+}
+
+
