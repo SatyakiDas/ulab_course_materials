@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Form Demo Class</title>
+    </head>
+    <body>
+        <form action="/form_demo" method="POST">
+
+            <!-- Example of Text field -->
+            <label for="student-id">Student Id: </label>
+            <input name="student-id" type="text">
+            
+            <!-- Example of password field -->
+            <label for="acnt-password">Password: </label>
+            <input name="acnt-password" type="password">
+            
+            <br>
+            
+            <!-- Example of radio button -->
+            <label for="dept">Department: </label>
+            <input type="radio" name="dept" value="CSE" id=""> CSE
+            <input type="radio" name="dept" value="EEE" id=""> EEE
+            <input type="radio" name="dept" value="MSJ" id=""> MSJ
+            <input type="radio" name="dept" value="DEH" id=""> DEH
+            
+            <br>
+
+            <!-- Example of Checkbox -->
+            <label for="courses">Courses Taken: </label>
+            <input type="checkbox" name="CSE305" value="CSE305" id=""> Algorithms
+            <input type="checkbox" name="CSE103" value="CSE103" id=""> Structured Programming
+            <input type="checkbox" name="CSE207" value="CSE207" id=""> Data Structures
+            <input type="checkbox" name="CSE404" value="CSE404" id=""> Software Engineering
+
+            <!-- The submit button -->
+            <input type="submit">
+        </form>
+    </body>
+</html>
